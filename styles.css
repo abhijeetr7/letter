@@ -1,0 +1,37 @@
+/* styles.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.love-letter-container {
+  background-image: url('love_letter_background.jpg'); /* Replace with your love letter background image */
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  overflow: hidden;
+}
+
+.love-letter {
+  margin: 100px auto;
+  width: 80%;
+  max-width: 800px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Background color for the love letter */
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: justify;
+  opacity: 0; /* Initially hide the love letter */
+}
+
+/* Animation for slowly handwritten text */
+@keyframes write {
+  from {
+    width: 0;
+  }
+}
+
